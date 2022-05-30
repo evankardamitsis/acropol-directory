@@ -10,7 +10,7 @@ const features = [
   {
     name: "Air condition & heating",
     description:
-      "All rooms have an individual Air Conditioning and Heating sys- tem. Use the remote control to set the temperature you wish. Please make sure that your balcony doors are properly closed.",
+      "All rooms have an individual Air Conditioning and Heating system. Use the remote control to set the temperature you wish. Please make sure that your balcony doors are properly closed.",
     icon: GlobeAltIcon,
   },
   {
@@ -40,13 +40,13 @@ const features = [
   {
     name: "Check-in | Check-out",
     description:
-      "Check-in is at 15:00. Check-Out is by 11:00. If you wish to ex- tend the check-out time, please contact Reception to check availability.",
+      "Check-in is at 15:00. Check-Out is by 11:00. If you wish to extend the check-out time, please contact Reception to check availability.",
     icon: AnnotationIcon,
   },
   {
     name: "Credit cards",
     description:
-      "We accept the following credit cards: American Express, Mas- terCard, Maestro, VISA.",
+      "We accept the following credit cards: American Express, MasterCard, Maestro, VISA.",
     icon: AnnotationIcon,
   },
   {
@@ -105,7 +105,7 @@ const features = [
   {
     name: "Library",
     description:
-      "We have a small book corner in our lobby. You are welcome to borrow books anytime during your stay. Please return any bor- rowed book at the Reception Desk on your departure.",
+      "We have a small book corner in our lobby. You are welcome to borrow books anytime during your stay. Please return any borrowed book at the Reception Desk on your departure.",
     icon: AnnotationIcon,
   },
   {
@@ -169,13 +169,13 @@ const features = [
   {
     name: "Telephone numbers",
     description:
-      "For room to room, domestic and international calls please con- sult the operating instructions of your room telephone device. All telephone calls will be automatically charged to your bill.",
+      "For room to room, domestic and international calls please consult the operating instructions of your room telephone device. All telephone calls will be automatically charged to your bill.",
     icon: AnnotationIcon,
   },
   {
     name: "Wake-up calls",
     description:
-      "Not to miss your early start of the day, let us wake you up in the morning. Please contact the Reception to arrange your wake- up call or consult the operating instructions of your room telephone device.",
+      "Not to miss your early start of the day, let us wake you up in the morning. Please contact the Reception to arrange your wake - up call or consult the operating instructions of your room telephone device.",
     icon: AnnotationIcon,
   },
   {
