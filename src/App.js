@@ -1,11 +1,10 @@
-import "./App.css";
+import * as React from "react";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  );
+    <Hero />
+  )
 }
 
 export default App;
