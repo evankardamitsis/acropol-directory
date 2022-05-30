@@ -26,7 +26,7 @@ const Hero = () => {
                   Hotel Directory
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              {/* <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Dear Guests, <br />
                 We are delighted to welcome you to{" "}
                 <strong>ACROPOL HOTEL</strong> and we wish you a pleasant stay!
@@ -34,7 +34,7 @@ const Hero = () => {
                 Our main priority is to make your feel like home! <br></br> In
                 this Directory you may find all the useful information about our
                 facilities and services available. <br></br>Enjoy your stay !
-              </p>
+              </p> */}
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a

@@ -1,10 +1,16 @@
 import * as React from "react";
 import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Hero />
-  )
+    <>
+      <Hero />
+      <Features />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
