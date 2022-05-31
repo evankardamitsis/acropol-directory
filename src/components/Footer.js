@@ -4,7 +4,11 @@ import Modal from "./Modal";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  function changeLanguage(e) {
+    i18n.changeLanguage(e.target.value);
+  }
 
   return (
     <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
@@ -42,6 +46,22 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+        <div className="ml-3">
+          <button
+            className=" p-3 mr-3 inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+            onClick={changeLanguage}
+            value="en"
+          >
+            En
+          </button>
+          <button
+            className=" p-3 inline-block px-6 py-2.5 bg-gray-800 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
+            onClick={changeLanguage}
+            value="gr"
+          >
+            Gr
+          </button>
+        </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
