@@ -1,8 +1,11 @@
 import React from "react";
 import acropolLogo from "../assets/acropol-logo.jpeg";
 import Modal from "./Modal";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
       <div className="sm:flex sm:items-center sm:justify-center">
@@ -22,14 +25,14 @@ const Footer = () => {
           <li>
             <Modal />
           </li>
-          <li>
+          <li className="ml-3">
             <a
               href="https://acropol-menu.netlify.app/"
               className="mr-4 hover:underline md:mr-6"
               target="_blank"
               rel="noreferrer"
             >
-              Restaurant Menu
+              {t("Restaurant Menu")}
             </a>
           </li>
           <li className="mr-3">+30 210 68 26 650</li>

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Modal = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -10,7 +13,7 @@ const Modal = () => {
         type="button"
         onClick={() => setShowModal(true)}
       >
-        Fire Safety
+        {t("Fire Safety")}
       </button>
       {showModal ? (
         <>
@@ -21,7 +24,7 @@ const Modal = () => {
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <h3 className="text-3xl font-semibold">
-                    Fire Safety Instructions
+                    {t("Fire Safety Instructions")}
                   </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -35,42 +38,54 @@ const Modal = () => {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <ul className="my-4 text-slate-500 text-lg leading-relaxed">
-                    <li>• Do not smoke in your room.</li>
-                    <li>• Always use the ashtray provided at the balcony.</li>
+                    <li>{t("• Do not smoke in your room.")}</li>
                     <li>
-                      • Take note of the Emergency Exit Plan which is located at
-                      your room’s entrance
+                      {t("• Always use the ashtray provided at the balcony.")}
                     </li>
                     <li>
-                      • In case of disable people please inform the Reception.
+                      {t(
+                        "• Take note of the Emergency Exit Plan which is located at your room’s entrance"
+                      )}
+                    </li>
+                    <li>
+                      {t(
+                        "• In case of disable people please inform the Reception."
+                      )}
                     </li>
                   </ul>
-                  <strong>What to do if you notice fire:</strong>
+                  <strong>{t("What to do if you notice fire:")}</strong>
                   <ul>
-                    <li>• Stay calm, do not panic.</li>
-                    <li>• Inform the Reception.</li>
+                    <li>{t("• Stay calm, do not panic.")}</li>
+                    <li>{t("• Inform the Reception.")}</li>
                     <li>
-                      • Raise the alarm by breaking the glass of the nearest
-                      “Fire Call Point”.
-                    </li>
-                    <li>• Evacuate the room closing all doors behind you.</li>
-                    <li>• Do not stop to collect personal belongings.</li>
-                    <li>
-                      • Alert floor room maid or any other member of the staff.
-                    </li>
-                    <li>• If you smell smoke stay low, smoke rises.</li>
-                    <li>• Use the nearest emergency exit.</li>
-                    <li>• Do not use the lift.</li>
-                    <li>• Go to the “Assembly Point” of the hotel.</li>
-                    <li>
-                      • Do not re-enter the building until told is safe to do
-                      so.
+                      {t(
+                        "• Raise the alarm by breaking the glass of the nearest “Fire Call Point”."
+                      )}
                     </li>
                     <li>
-                      • If you are forced to stay in your room, seal the door
-                      with wet towels, cover your mouth and nose with a damp
-                      cloth to ease breathing, open and stay near window until
-                      help arrives.
+                      {t("• Evacuate the room closing all doors behind you.")}
+                    </li>
+                    <li>
+                      {t("• Do not stop to collect personal belongings.")}
+                    </li>
+                    <li>
+                      {t(
+                        "• Alert floor room maid or any other member of the staff."
+                      )}
+                    </li>
+                    <li>{t("• If you smell smoke stay low, smoke rises.")}</li>
+                    <li>{t("• Use the nearest emergency exit.")}</li>
+                    <li>{t("• Do not use the lift.")}</li>
+                    <li>{t("• Go to the “Assembly Point” of the hotel.")}</li>
+                    <li>
+                      {t(
+                        "• Do not re-enter the building until told is safe to do so."
+                      )}
+                    </li>
+                    <li>
+                      {t(
+                        "• If you are forced to stay in your room, seal the door with wet towels, cover your mouth and nose with a damp cloth to ease breathing, open and stay near window until help arrives."
+                      )}
                     </li>
                   </ul>
                 </div>
@@ -81,7 +96,7 @@ const Modal = () => {
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
-                    Close
+                    {t(" Close")}
                   </button>
                 </div>
               </div>
