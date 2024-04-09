@@ -21,7 +21,7 @@ const Features = () => {
     {
       name: "Amenities in your room",
       description:
-        "The collection includes: soap, shower gel, shampoo, vanity kit, and shoeshine sponge. If you need extra amenities please contact Reception and inform about what you may need. Slippers available upon request.",
+        "The collection includes soap, shower gel, shampoo, vanity kit, and shoeshine sponge. If you need extra amenities, please contact Reception and inform about what you may need. Slippers and toothpaste set are available upon request.\n",
       icon: ScaleIcon,
     },
     {
@@ -43,9 +43,15 @@ const Features = () => {
       icon: AnnotationIcon,
     },
     {
+      name: "Chargers / converters\n",
+      description:
+          "A variety of adaptors, converters & chargers are at your disposal. Please contact the front office 24/7.",
+      icon: AnnotationIcon,
+    },
+    {
       name: "Check-in | Check-out",
       description:
-        "Check-in is at 15:00. Check-Out is by 11:00. If you wish to extend the check-out time, please contact Reception to check availability.",
+        "All guests must be registered and it is necessary to present an ID card or passport upon checking-in. Check-in time: after 15:00 Check-out time: by 11:00. If you wish to extend the check-out time, please contact Reception to check availability and price list.\n",
       icon: AnnotationIcon,
     },
     {
@@ -126,6 +132,11 @@ const Features = () => {
       icon: AnnotationIcon,
     },
     {
+      name: "Material damage to the hotel\n",
+      description: "For any damage caused to the room or the other facilities of the hotel due to any act or omission due to Customers or their Guests, the sole responsibility lies with the Customer. The charge will correspond to the full amount for the replacement of lost or damaged item, furniture, or equipment.\n",
+      icon: AnnotationIcon,
+    },
+    {
       name: "Mini fridge",
       description: "Each guest room has its own mini-fridge.",
       icon: AnnotationIcon,
@@ -151,19 +162,25 @@ const Features = () => {
     {
       name: "Restaurant",
       description:
-        "The restaurant is located on the ground floor and it is open from 12:00 to 21:30.",
+        "The restaurant is located on the ground floor and it is open from 12:00 to 21:45.\n",
       icon: AnnotationIcon,
     },
     {
       name: "Room Service",
       description:
-        "Our room service is available from 08:00 to 21:30. A digital menu is available directly to your smartphone simply by scanning the QR code. To order please dial 154.",
+        "Our room service is available from 08:00 to 21:45. A digital menu is available directly to your smartphone simply by scanning the QR code. To order please dial 154.\n",
+      icon: AnnotationIcon,
+    },
+    {
+      name: "Safe boxes",
+      description:
+          "For your convenience, a safe box is available inside the closet in the room free of charge. Please follow the instructions on the front side of the safe. The hotel is not responsible for the loss of valuables and money left in the rooms and in the room safes.\n",
       icon: AnnotationIcon,
     },
     {
       name: "Smoking policy",
       description:
-        "Please note that we are a non - smoking hotel. Smoking is only allowed in the room balcony and the garden.",
+        "Smoking is not allowed in all indoor areas of the hotel, including guestrooms. Smoking is only allowed in the room balcony and the garden. \n",
       icon: AnnotationIcon,
     },
     {
